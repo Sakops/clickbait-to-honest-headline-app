@@ -32,8 +32,10 @@
         </div>
         <?php
             if(isset($_POST["submit-btn"])){
-                echo "<strong class='text-danger'>Original Headline</strong><h4>".strtolower($clickbait)."</h4><hr>";
-                echo "<strong class='text-success'>Honest Headline</strong><h4>".strtolower($honestHeadline)."</h4><hr>";
+                $clickbait = clickbaitReplacer()[0];
+                $honestHeadline = clickbaitReplacer()[1];
+                
+                displayClickbait($clickbait, $honestHeadline);
             }
         ?>
     </div>
