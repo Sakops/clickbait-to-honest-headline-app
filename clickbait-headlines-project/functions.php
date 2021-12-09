@@ -31,5 +31,13 @@
                 "don't care about"
             ];
             $honestHeadline = str_replace($clickbaitWords, $replacementWords, $clickbait);
+            return array($clickbait, $honestHeadline);
         }
+        function displayHeadline($clickbait, $honestHeadline){
+             if(isset($_POST["submit-btn"])){
+                echo "<strong class='text-danger'>Original Headline</strong><h4>".ucwords($clickbait)."</h4><hr>";
+                echo "<strong class='text-success'>Honest Headline</strong><h4>".ucwords($honestHeadline)."</h4><hr>";
+        }
+        }
+        
     }
