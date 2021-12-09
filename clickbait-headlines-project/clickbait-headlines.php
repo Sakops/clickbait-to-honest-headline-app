@@ -35,7 +35,7 @@
                 $clickbait = clickbaitReplacer()[0];
                 $honestHeadline = clickbaitReplacer()[1];
                 
-                displayClickbait($clickbait, $honestHeadline);
+                displayHeadline($clickbait, $honestHeadline);
             }
         ?>
     </div>
