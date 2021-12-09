@@ -31,7 +31,7 @@
                 "don't care about"
             ];
             $honestHeadline = str_replace($clickbaitWords, $replacementWords, $clickbait);
-            return array($clickbait, $honestHeadline);
+            return array($clickbait, $honestHeadline, $clickbait);
         }
         function displayHeadline($clickbait, $honestHeadline){
              if(isset($_POST["submit-btn"])){
